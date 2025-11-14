@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="@drawable/gradient_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:text="Welcome Back!"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/emailInput"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:textColorHint="#D0D0D0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/passwordInput"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:textColorHint="#D0D0D0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginBtn"
+        android:text="Login"
+        android:textStyle="bold"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#0093E9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googleSignInBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp" />
+
+
+    <!-- Signup Link -->
+    <TextView
+        android:id="@+id/signupLink"
+        android:text="New user? Sign up"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
