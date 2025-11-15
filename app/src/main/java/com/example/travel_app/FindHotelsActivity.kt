@@ -1,6 +1,8 @@
 package com.example.travel_app
 
 import android.content.Intent
+import android.net.Uri
+import android.widget.LinearLayout
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -64,6 +66,29 @@ class FindHotelsActivity : AppCompatActivity() {
             adapter.updateList(filtered)
             Toast.makeText(this, "Showing luxury 5★+", Toast.LENGTH_SHORT).show()
         }
+        val exploreMore = findViewById<LinearLayout>(R.id.exploreMore)
+        exploreMore.setOnClickListener {
+            try {
+                // Try opening in any maps app first
+                val gmmIntentUri = Uri.parse("geo:0,0?q=hotels")
+                val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
+                if (mapIntent.resolveActivity(packageManager) != null) {
+                    startActivity(mapIntent)
+                } else {
+                    // Fallback: open in browser
+                    val browserIntent = Intent(
+                        Intent.ACTION_VIEW,
+                        Uri.parse("https://www.google.com/maps/search/hotels")
+                    )
+                    startActivity(browserIntent)
+                }
+            } catch (e: Exception) {
+                // Just in case something unexpected happens
+                Toast.makeText(this, "Unable to open maps", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+
     }
 
     private fun openDetails(hotel: Hotel) {
