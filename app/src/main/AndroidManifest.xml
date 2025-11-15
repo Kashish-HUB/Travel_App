@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Travel_App">
         <activity
+            android:name=".HotelBookingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HotelDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FindHotelsActivity"
+            android:exported="true" />
+        <activity
             android:name=".BookingActivity"
             android:exported="true" />
         <activity
