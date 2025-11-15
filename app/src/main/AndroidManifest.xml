@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Travel_App">
         <activity
+            android:name=".BookingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BookFlightActivity"
+            android:exported="true" />
+        <activity
             android:name=".HomeActivity"
             android:exported="true" />
         <activity
