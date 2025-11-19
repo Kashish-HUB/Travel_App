@@ -21,8 +21,8 @@ class HotelAdapter(
         val tvCity: TextView = itemView.findViewById(R.id.tvCity)
         val tvRating: TextView = itemView.findViewById(R.id.tvRating)
         val tvPrice: TextView = itemView.findViewById(R.id.tvPrice)
-        val btnDetails: Button = itemView.findViewById(R.id.btnViewDetails)
-        val btnWishlist: Button = itemView.findViewById(R.id.btnWishlist)
+        val btnDetails: TextView = itemView.findViewById(R.id.btnViewDetails)
+        val btnWishlist: TextView = itemView.findViewById(R.id.btnWishlist)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HotelViewHolder {

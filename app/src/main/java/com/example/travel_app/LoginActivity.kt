@@ -30,7 +30,7 @@ class LoginActivity : AppCompatActivity() {
 
         // If already logged in → skip login screen
         if (auth.currentUser != null) {
-            startActivity(Intent(this, HomeActivity::class.java))
+            startActivity(Intent(this, DashboardActivity::class.java))
             finish()
             return
         }
@@ -63,7 +63,7 @@ class LoginActivity : AppCompatActivity() {
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         Toast.makeText(this, "Welcome back!", Toast.LENGTH_SHORT).show()
-                        startActivity(Intent(this, HomeActivity::class.java))
+                        startActivity(Intent(this, DashboardActivity::class.java))
                         finish()
                     } else {
                         Toast.makeText(this, "Login failed: ${task.exception?.message}", Toast.LENGTH_LONG).show()
@@ -95,7 +95,7 @@ class LoginActivity : AppCompatActivity() {
                     .addOnCompleteListener { signInTask ->
                         if (signInTask.isSuccessful) {
                             Toast.makeText(this, "Google Sign-In successful", Toast.LENGTH_SHORT).show()
-                            startActivity(Intent(this, HomeActivity::class.java))
+                            startActivity(Intent(this, DashboardActivity::class.java))
                             finish()
                         } else {
                             Toast.makeText(this, "Authentication failed", Toast.LENGTH_SHORT).show()

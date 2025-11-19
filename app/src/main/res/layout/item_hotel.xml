@@ -3,87 +3,104 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    app:cardCornerRadius="18dp"
-    app:cardElevation="6dp">
+    android:layout_margin="12dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="5dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="12dp">
 
+        <!-- Hotel Image -->
         <ImageView
             android:id="@+id/imgHotel"
             android:layout_width="match_parent"
             android:layout_height="160dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/sample_hotel_1" />
+            android:src="@drawable/ic_launcher_background"
+            android:background="#E8E8E8" />
 
+        <!-- Hotel Name -->
+        <TextView
+            android:id="@+id/tvHotelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Hotel Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <!-- City -->
+        <TextView
+            android:id="@+id/tvCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:layout_marginTop="3dp"
+            android:textSize="14sp"
+            android:textColor="#6B7280" />
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/tvRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⭐ 4.5"
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginTop="4dp" />
+
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="₹ 0 / night"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#2563EB" />
+
+        <!-- Buttons Row -->
         <LinearLayout
-            android:padding="12dp"
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp">
 
-            <TextView
-                android:id="@+id/tvHotelName"
-                android:text="Hotel Name"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/tvCity"
-                android:text="City"
-                android:textColor="#555"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/tvRating"
-                android:text="⭐ 4.8"
-                android:textStyle="bold"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/tvPrice"
-                android:text="₹ 8,500"
+            <!-- View Details Button -->
+            <Button
+                android:id="@+id/btnViewDetails"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="View"
+                android:textColor="#FFFFFF"
                 android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="#1A73E8"
-                android:layout_marginTop="6dp"
+                android:background="@drawable/btn_primary" />
+
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
+
+            <!-- Wishlist Button -->
+            <Button
+                android:id="@+id/btnWishlist"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp">
-
-                <Button
-                    android:id="@+id/btnViewDetails"
-                    android:text="View Details"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/btn_primary"
-                    android:textColor="#FFFFFF"/>
-
-                <View
-                    android:layout_width="8dp"
-                    android:layout_height="wrap_content"/>
-
-                <Button
-                    android:id="@+id/btnWishlist"
-                    android:text="♡ Save"
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:paddingLeft="12dp"
-                    android:paddingRight="12dp"/>
-            </LinearLayout>
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="Save"
+                android:textSize="15sp"
+                android:textColor="#EF4444"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/bg_wishlist_button" />
         </LinearLayout>
 
     </LinearLayout>

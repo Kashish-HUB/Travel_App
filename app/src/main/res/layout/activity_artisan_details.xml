@@ -1,0 +1,273 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3E1"
+    android:padding="16dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--  HEADER IMAGE  -->
+        <ImageView
+            android:id="@+id/imgArtisanHeader"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_16"/>
+        <!--  TITLE  -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Local Artisan Workshop"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#4E3000"
+            android:layout_marginTop="16dp"/>
+        <!--  DESCRIPTION  -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Learn handmade crafts such as pottery, weaving, embroidery, wood carving and more with expert local artisans."
+            android:textSize="16sp"
+            android:textColor="#5A4636"
+            android:layout_marginTop="8dp"/>
+        <!--  ARTISAN SELECTION  -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Your Artisan"
+            android:textSize="20sp"
+            android:textColor="#4E3000"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+        <LinearLayout
+            android:id="@+id/artisanListContainer"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <!--  ONE ARTISAN CARD TEMPLATE (You can duplicate and change)  -->
+            <!--  ARTISAN 1  -->
+            <LinearLayout
+                android:id="@+id/artisan1"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:elevation="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:id="@+id/artisanImg1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_23"
+                    android:layout_marginEnd="10dp"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/txtArtisanName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arti – Pottery Expert"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/txtArtisanSkill1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Skills: Pottery, Clay Art"
+                        android:textSize="15sp"
+                        android:textColor="#5A4636"
+                        android:layout_marginTop="3dp"/>
+                    <TextView
+                        android:id="@+id/txtArtisanRating1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="⭐ Rating: 4.8"
+                        android:textColor="#FFA000"
+                        android:textSize="14sp"
+                        android:layout_marginTop="3dp"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btnAddArtisan1"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="ADD"
+                    android:backgroundTint="#FFB45C"
+                    android:textColor="#3D1F00"/>
+            </LinearLayout>
+            <!--  ARTISAN 2  -->
+            <LinearLayout
+                android:id="@+id/artisan2"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:elevation="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:id="@+id/artisanImg2"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_24"
+                    android:layout_marginEnd="10dp"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/txtArtisanName2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Raman – Wood Carver"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/txtArtisanSkill2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Skills: Wood Carving, Sculpture"
+                        android:textSize="15sp"
+                        android:textColor="#5A4636"
+                        android:layout_marginTop="3dp"/>
+                    <TextView
+                        android:id="@+id/txtArtisanRating2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="⭐ Rating: 4.9"
+                        android:textColor="#FFA000"
+                        android:textSize="14sp"
+                        android:layout_marginTop="3dp"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btnAddArtisan2"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="ADD"
+                    android:backgroundTint="#FFB45C"
+                    android:textColor="#3D1F00"/>
+            </LinearLayout>
+            <!--  ARTISAN 3  -->
+            <LinearLayout
+                android:id="@+id/artisan3"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:elevation="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/artisanImg3"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_25"
+                    android:layout_marginEnd="10dp"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/txtArtisanName3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Meera – Hand Weaving Master"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/txtArtisanSkill3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Skills: Weaving, Fabric Design"
+                        android:textSize="15sp"
+                        android:textColor="#5A4636"
+                        android:layout_marginTop="3dp"/>
+                    <TextView
+                        android:id="@+id/txtArtisanRating3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="⭐ Rating: 4.7"
+                        android:textColor="#FFA000"
+                        android:textSize="14sp"
+                        android:layout_marginTop="3dp"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btnAddArtisan3"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="ADD"
+                    android:backgroundTint="#FFB45C"
+                    android:textColor="#3D1F00"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!--  TIME SLOTS  -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available Time Slots"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+            <Button
+                android:id="@+id/artSlotMorning"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:text="10:00 AM"
+                android:backgroundTint="#FFE0B2"/>
+            <Button
+                android:id="@+id/artSlotAfternoon"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:text="1:00 PM"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#FFE0B2"/>
+            <Button
+                android:id="@+id/artSlotEvening"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:text="5:00 PM"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#FFE0B2"/>
+        </LinearLayout>
+        <!--  DATE PICKER  -->
+        <Button
+            android:id="@+id/btnPickArtisanDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Choose Date"
+            android:backgroundTint="#FFB45C"
+            android:textColor="#3D1F00"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+        <!--  BOOK BUTTON  -->
+        <Button
+            android:id="@+id/btnBookArtisan"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Book Workshop"
+            android:backgroundTint="#D97706"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+</ScrollView>

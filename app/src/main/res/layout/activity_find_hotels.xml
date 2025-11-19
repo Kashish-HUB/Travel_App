@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/root_find_hotels"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="#F6F8FB"
+    android:background="@drawable/hotel_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Search Bar -->
     <EditText
         android:id="@+id/etSearchCity"
         android:hint="Search city or hotel..."
-        android:padding="12dp"
+        android:padding="14dp"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="12dp"
+        android:background="@drawable/rounded_search_box"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded_edittext"/>
+        android:layout_height="wrap_content" />
 
+    <!-- Filter Buttons -->
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp">
+        android:layout_marginTop="14dp"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -28,42 +35,48 @@
             <Button
                 android:id="@+id/filterRating"
                 android:text="Top Rated"
-                android:background="@drawable/btn_primary"
-                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:layout_marginEnd="10dp"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"/>
+                android:layout_height="42dp"/>
 
             <Button
                 android:id="@+id/filterPriceLow"
                 android:text="Lowest Price"
-                android:background="@drawable/btn_primary"
-                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:layout_marginEnd="10dp"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"/>
+                android:layout_height="42dp"/>
 
             <Button
                 android:id="@+id/filterLuxury"
                 android:text="Luxury 5★"
-                android:background="@drawable/btn_primary"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"/>
+                android:layout_height="42dp"/>
         </LinearLayout>
     </HorizontalScrollView>
 
+    <!-- Hotel List -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvHotels"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"/>
 
+    <!-- Explore More Card -->
     <LinearLayout
         android:id="@+id/exploreMore"
         android:orientation="horizontal"
-        android:padding="12dp"
+        android:padding="14dp"
+        android:background="@drawable/card_explore"
+        android:elevation="6dp"
         android:gravity="center_vertical"
-        android:background="@drawable/rounded_card"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clickable="true"
@@ -71,16 +84,18 @@
 
         <ImageView
             android:src="@drawable/ic_maps"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginEnd="8dp"/>
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:tint="#3B82F6"
+            android:layout_marginEnd="10dp" />
 
         <TextView
             android:text="Explore More Hotels on Google Maps"
             android:textColor="#000"
-            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textSize="17sp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 </LinearLayout>

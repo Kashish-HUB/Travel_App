@@ -1,0 +1,124 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3E1"
+    android:padding="16dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tourTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose a Cultural Tour"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#4E3000"
+            android:gravity="center"/>
+        <Spinner
+            android:id="@+id/spinnerTours"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:id="@+id/txtGuideInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guide: -"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"/>
+        <TextView
+            android:id="@+id/txtPriceInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price: ₹0"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"/>
+        <Button
+            android:id="@+id/btnPickTourDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Choose Date"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#FFB45C"
+            android:textColor="#3D1F00"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Time Slot"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="14dp"/>
+        <LinearLayout
+            android:id="@+id/slotRow"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <Button
+                android:id="@+id/slot930"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="44dp"
+                android:text="9:30 AM"
+                android:backgroundTint="#FFE0B2"/>
+            <Button
+                android:id="@+id/slot1pm"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="44dp"
+                android:text="1:00 PM"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#FFE0B2"/>
+            <Button
+                android:id="@+id/slot4pm"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="44dp"
+                android:text="4:00 PM"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#FFE0B2"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <Button
+                android:id="@+id/slot730"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="44dp"
+                android:text="7:30 PM"
+                android:backgroundTint="#FFE0B2"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Add to Cart"
+            android:textSize="18sp"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="#D97706"
+            android:textColor="#FFFFFF"/>
+        <Button
+            android:id="@+id/btnViewSummary"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="View Booking Summary"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FFB45C"
+            android:textColor="#3D1F00"/>
+    </LinearLayout>
+</ScrollView>

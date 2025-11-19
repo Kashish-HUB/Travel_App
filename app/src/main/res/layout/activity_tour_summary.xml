@@ -1,0 +1,42 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3E1">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tour Booking Summary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#4E3000"
+            android:layout_marginBottom="12dp"/>
+        <LinearLayout
+            android:id="@+id/tourSummaryContainer"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tourSummaryTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: ₹0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#C47A00"
+            android:layout_marginTop="16dp"/>
+        <Button
+            android:id="@+id/btnTourPay"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Proceed to Payment"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="#D97706"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</ScrollView>

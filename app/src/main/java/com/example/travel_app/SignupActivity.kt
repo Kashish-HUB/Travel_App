@@ -38,7 +38,7 @@ class SignupActivity : AppCompatActivity() {
                             )
                             db.collection("users").document(user!!.uid)
                                 .set(userData)
-                            startActivity(Intent(this, HomeActivity::class.java))
+                            startActivity(Intent(this, DashboardActivity::class.java))
                             finish()
                         } else {
                             Toast.makeText(this, "Signup failed!", Toast.LENGTH_SHORT).show()

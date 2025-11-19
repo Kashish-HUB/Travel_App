@@ -1,0 +1,45 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#FFF3E1">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <!--  TITLE  -->
+        <TextView
+            android:id="@+id/txtArtisanSummaryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Workshop Summary"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#4E3000"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/artisanSummaryContainer"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtArtisanTotalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: ₹0"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="#C47A00"/>
+
+        <Button
+            android:id="@+id/btnArtisanPayNow"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Pay Now"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#D97706"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>

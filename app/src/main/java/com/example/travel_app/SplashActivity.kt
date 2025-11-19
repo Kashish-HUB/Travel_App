@@ -38,7 +38,7 @@ class SplashActivity : AppCompatActivity() {
             val currentUser = auth.currentUser
             if (currentUser != null) {
                 // User is already logged in → Go to Home screen
-                startActivity(Intent(this, HomeActivity::class.java))
+                startActivity(Intent(this, DashboardActivity::class.java))
             } else {
                 // User not logged in → Go to Login screen
                 startActivity(Intent(this, LoginActivity::class.java))

@@ -1,0 +1,123 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F7F7F7">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- State Name -->
+        <TextView
+            android:id="@+id/tvStateName"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#222"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Description Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/rounded_box"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:textSize="15sp"
+                android:textColor="#444"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Popular Places -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_box"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:text="Popular Places"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#111"
+                android:layout_marginBottom="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvPopularPlaces"
+                android:textSize="14sp"
+                android:textColor="#555"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Famous Dishes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_box"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:text="Famous Dishes"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#111"
+                android:layout_marginBottom="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvDishes"
+                android:textSize="14sp"
+                android:textColor="#555"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Image Gallery Heading -->
+        <TextView
+            android:text="Gallery"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#111"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Image Gallery -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvImages"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@drawable/rounded_box"
+            android:padding="8dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Google Maps Button -->
+        <Button
+            android:id="@+id/btnMap"
+            android:text="📍 Find Best Routes"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

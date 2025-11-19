@@ -12,6 +12,54 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Travel_App">
         <activity
+            android:name=".pay"
+            android:exported="false" />
+        <activity
+            android:name=".Tour"
+            android:exported="false" />
+        <activity
+            android:name=".ArtisanFakePaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TourSummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ArtisanSummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookingSummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TourDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ArtisanDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CookingDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StateDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExploreStatesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OfferActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TravelSafetyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CultureActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="true" />
+        <activity
             android:name=".HotelBookingActivity"
             android:exported="true" />
         <activity

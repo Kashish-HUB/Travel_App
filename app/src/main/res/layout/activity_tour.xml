@@ -1,0 +1,49 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#FFF3E1"
+    android:padding="24dp">
+    <ImageView
+        android:id="@+id/successIcon"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/img_22"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id="@+id/txtTourPaymentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Successful!"
+        android:textColor="#4E3000"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/txtTourPaidAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount Paid: ₹0"
+        android:textColor="#8B5E34"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"/>
+    <TextView
+        android:id="@+id/txtTourBookingId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking ID: TOUR000"
+        android:textSize="18sp"
+        android:textColor="#6B4F26"
+        android:layout_marginBottom="24dp"/>
+    <Button
+        android:id="@+id/btnTourDownloadInvoice"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Download Invoice"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="#D97706"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>
