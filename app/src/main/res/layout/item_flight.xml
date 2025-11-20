@@ -3,10 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    app:cardCornerRadius="18dp"
-    app:cardElevation="8dp"
-    android:foreground="?android:attr/selectableItemBackground">
+    android:layout_margin="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,30 +13,41 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Airline + Logo Row -->
+        <!-- Airline + Price -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="1"
             android:gravity="center_vertical">
 
+            <!-- Airline Icon -->
+            <ImageView
+                android:id="@+id/ivAirlineLogo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_flight"
+                app:tint="#3F51B5"
+                android:layout_marginEnd="10dp" />
+
+            <!-- Airline Name -->
             <TextView
                 android:id="@+id/tvAirline"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Airline"
+                android:layout_weight="1"
+                android:text="Airline Name"
                 android:textStyle="bold"
                 android:textColor="#1A1A1A"
                 android:textSize="18sp" />
 
+            <!-- Price -->
             <TextView
                 android:id="@+id/tvPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="₹ 4,999"
-                android:textColor="#2E7D32"
                 android:textStyle="bold"
+                android:textColor="#2E7D32"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -45,49 +55,39 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#E0E0E0"
-            android:layout_marginVertical="12dp" />
+            android:layout_marginVertical="12dp"
+            android:background="#DDDDDD" />
 
-        <!-- Route + Time -->
-        <LinearLayout
-            android:layout_width="match_parent"
+        <!-- Route -->
+        <TextView
+            android:id="@+id/tvRoute"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:text="DEL → BOM"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000000" />
 
-            <TextView
-                android:id="@+id/tvRoute"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="DEL → BOM"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:textColor="#333333"
-                />
-
-            <TextView
-                android:id="@+id/tvTimes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="07:00 - 09:00 · 2h"
-                android:textSize="14sp"
-                android:textColor="#666666"
-                android:layout_marginTop="4dp" />
-        </LinearLayout>
+        <!-- Timings -->
+        <TextView
+            android:id="@+id/tvTimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07:00 AM - 09:00 AM · 2h"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginTop="4dp" />
 
         <!-- Book Button -->
         <Button
             android:id="@+id/btnBookNow"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="50dp"
             android:text="Book Now"
             android:textStyle="bold"
             android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:background="#3F51B5"
-            android:layout_marginTop="14dp"
-            android:stateListAnimator="@null"
-            android:gravity="center" />
-
+            android:backgroundTint="#3F51B5"
+            android:layout_marginTop="16dp"
+            android:stateListAnimator="@null"/>
     </LinearLayout>
-
 </androidx.cardview.widget.CardView>

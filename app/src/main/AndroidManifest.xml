@@ -12,41 +12,59 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Travel_App">
         <activity
-            android:name=".pay"
+            android:name=".PaymentActivity"
             android:exported="false" />
+        <activity
+            android:name=".successfull"
+            android:exported="false" />
+        <activity
+            android:name=".OfferSummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OfferPaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IssueSubmittedActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ReportIssueActivity"
+            android:exported="true" />
+        <activity
+            android:name=".pay"
+            android:exported="true" />
         <activity
             android:name=".Tour"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ArtisanFakePaymentActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".PaymentSuccessActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".TourSummaryActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ArtisanSummaryActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".BookingSummaryActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".TourDetailsActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ArtisanDetailsActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".CookingDetailsActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".StateDetailsActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ExploreStatesActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".OfferActivity"
             android:exported="true" />
@@ -73,9 +91,6 @@
             android:exported="true" />
         <activity
             android:name=".BookFlightActivity"
-            android:exported="true" />
-        <activity
-            android:name=".HomeActivity"
             android:exported="true" />
         <activity
             android:name=".SignupActivity"

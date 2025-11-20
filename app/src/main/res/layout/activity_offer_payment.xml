@@ -1,0 +1,51 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFF3E1">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--  TITLE  -->
+        <TextView
+            android:id="@+id/txtDealTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deal Title"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#4E3000"
+            android:layout_marginTop="16dp"/>
+        <!--  PRICE  -->
+        <TextView
+            android:id="@+id/txtDealPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price: ₹0"
+            android:textSize="18sp"
+            android:textColor="#C47A00"
+            android:layout_marginTop="6dp"/>
+        <!--  WISHLIST STATUS  -->
+        <TextView
+            android:id="@+id/txtWishlistStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wishlist: Not Saved"
+            android:textSize="16sp"
+            android:textColor="#4E3000"
+            android:layout_marginTop="10dp"/>
+        <!--  PAY BUTTON  -->
+        <Button
+            android:id="@+id/btnPayDeal"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Pay Now"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#D97706"
+            android:layout_marginTop="25dp"/>
+    </LinearLayout>
+</ScrollView>

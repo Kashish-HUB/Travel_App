@@ -1,36 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="#F7F7F7"
-    android:padding="16dp">
+    android:padding="18dp"
+    android:background="@drawable/explore_bg">
 
-    <!-- Title -->
+    <!-- Heading -->
     <TextView
-        android:text="Explore New Destinations"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="#222"
-        android:layout_marginBottom="16dp"
+        android:id="@+id/tvExploreTitle"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Explore New Destinations"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:letterSpacing="0.02"
+        android:layout_marginBottom="14dp"/>
 
-    <!-- Optional Search -->
-    <EditText
-        android:id="@+id/etSearchState"
-        android:hint="Search states..."
-        android:padding="12dp"
-        android:background="@drawable/rounded_box"
-        android:layout_marginBottom="16dp"
+    <!-- Sub-title -->
+    <TextView
+        android:id="@+id/tvExploreSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discover states, cities and popular tourist places"
+        android:textSize="14sp"
+        android:textColor="#444"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Search Bar Container -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_box"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginBottom="18dp">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_search"
+            app:tint="#666" />
+
+        <EditText
+            android:id="@+id/etSearchState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search states..."
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:textSize="15sp"
+            android:textColor="#111"
+            android:textColorHint="#777" />
+    </LinearLayout>
 
     <!-- RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvStates"
-        android:clipToPadding="false"
-        android:paddingBottom="20dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="30dp" />
 
 </LinearLayout>

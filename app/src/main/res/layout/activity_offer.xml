@@ -1,10 +1,686 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OfferActivity">
+    android:background="#FFF6E9">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+            <ImageView
+                android:id="@+id/headerBg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#88000000"/>
+            <TextView
+                android:id="@+id/txtPremiumOffers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Premium Offers"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#FFFFFF"
+            android:elevation="6dp"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@drawable/img_33"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:background="#EDEDED"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title1"
+                android:text="Goa Tour Premium"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#3A2400"
+                android:layout_marginTop="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/original1"
+                android:text="Original Price: ₹28,000"
+                android:textSize="12sp"
+                android:textColor="#8A755A"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/discount1"
+                android:text="Discount Price: ₹18,999"
+                android:textSize="14sp"
+                android:textColor="#D97706"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/off1"
+                android:text="(32% OFF)"
+                android:textSize="12sp"
+                android:textColor="#1F7000"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/save1"
+                android:text="Save Offer"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:textStyle="bold"
+                android:backgroundTint="#FFB45C"
+                android:textColor="#3D1F00"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#FFFFFF"
+            android:elevation="6dp"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@drawable/img_34"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:background="#EDEDED"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title2"
+                android:text="Kashmir Paradise Tour"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#3A2400"
+                android:layout_marginTop="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/original2"
+                android:text="Original Price: ₹35,000"
+                android:textSize="12sp"
+                android:textColor="#8A755A"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/discount2"
+                android:text="Discount Price: ₹25,499"
+                android:textSize="14sp"
+                android:textColor="#D97706"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/off2"
+                android:text="(27% OFF)"
+                android:textSize="12sp"
+                android:textColor="#1F7000"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/save2"
+                android:text="Save Offer"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:backgroundTint="#FFB45C"
+                android:textStyle="bold"
+                android:textColor="#3D1F00"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#FFFFFF"
+            android:elevation="6dp"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@drawable/img_35"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:background="#EDEDED"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title3"
+                android:text="World Tour Special"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#3A2400"
+                android:layout_marginTop="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/original3"
+                android:text="Original Price: ₹1,80,000"
+                android:textSize="12sp"
+                android:textColor="#8A755A"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/discount3"
+                android:text="Discount Price: ₹1,40,000"
+                android:textSize="14sp"
+                android:textColor="#D97706"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/off3"
+                android:text="(24% OFF)"
+                android:textSize="12sp"
+                android:textColor="#1F7000"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/save3"
+                android:text="Save Offer"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:backgroundTint="#FFB45C"
+                android:textColor="#3D1F00"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/card4"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#FFFFFF"
+            android:elevation="6dp"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@drawable/img_36"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:background="#EDEDED"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title4"
+                android:text="Paris Romantic Package"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#3A2400"
+                android:layout_marginTop="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/original4"
+                android:text="Original Price: ₹1,20,000"
+                android:textSize="12sp"
+                android:textColor="#8A755A"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/discount4"
+                android:text="Discount Price: ₹95,000"
+                android:textSize="14sp"
+                android:textColor="#D97706"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/off4"
+                android:text="(20% OFF)"
+                android:textSize="12sp"
+                android:textColor="#1F7000"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/save4"
+                android:text="Save Offer"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:backgroundTint="#FFB45C"
+                android:textColor="#3D1F00"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/card5"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#FFFFFF"
+            android:elevation="6dp"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@drawable/img_37"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:background="#EDEDED"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title5"
+                android:text="Dubai Gold Experience"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#3A2400"
+                android:layout_marginTop="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/original5"
+                android:text="Original Price: ₹70,000"
+                android:textSize="12sp"
+                android:textColor="#8A755A"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/discount5"
+                android:text="Discount Price: ₹54,999"
+                android:textSize="14sp"
+                android:textColor="#D97706"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/off5"
+                android:text="(21% OFF)"
+                android:textSize="12sp"
+                android:textColor="#1F7000"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/save5"
+                android:text="Save Offer"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:backgroundTint="#FFB45C"
+                android:textColor="#3D1F00"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/card6"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#FFFFFF"
+            android:elevation="6dp"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@drawable/img_38"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:background="#EDEDED"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title6"
+                android:text="Kerala Houseboat Trip"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#3A2400"
+                android:layout_marginTop="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/original6"
+                android:text="Original Price: ₹32,000"
+                android:textSize="12sp"
+                android:textColor="#8A755A"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/discount6"
+                android:text="Discount Price: ₹24,999"
+                android:textSize="14sp"
+                android:textColor="#D97706"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/off6"
+                android:text="(22% OFF)"
+                android:textSize="12sp"
+                android:textColor="#1F7000"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/save6"
+                android:text="Save Offer"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:backgroundTint="#FFB45C"
+                android:textColor="#3D1F00"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/card7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:elevation="6dp"
+            android:padding="12dp"
+            android:layout_marginBottom="18dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image7"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_39"
+                android:background="#EDEDED"
+                android:clipToOutline="true" />
+
+            <TextView
+                android:id="@+id/title7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manali Snow Adventure"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#3A2400"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/original7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Original Price: ₹20,000"
+                android:textSize="13sp"
+                android:textColor="#8A755A"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:id="@+id/discount7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discount Price: ₹14,499"
+                android:textSize="15sp"
+                android:textColor="#D97706"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:id="@+id/off7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(27% OFF)"
+                android:textSize="13sp"
+                android:textColor="#1F7000"
+                android:textStyle="bold"
+                android:layout_marginTop="1dp" />
+
+            <Button
+                android:id="@+id/save7"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Save Offer"
+                android:textSize="14sp"
+                android:textColor="#3D1F00"
+                android:textStyle="bold"
+                android:backgroundTint="#FFB45C"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/card8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:elevation="6dp"
+            android:padding="12dp"
+            android:layout_marginBottom="18dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image8"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_40"
+                android:background="#EDEDED"
+                android:clipToOutline="true" />
+
+            <TextView
+                android:id="@+id/title8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thailand Budget Trip"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#3A2400"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/original8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Original Price: ₹50,000"
+                android:textSize="13sp"
+                android:textColor="#8A755A"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:id="@+id/discount8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discount Price: ₹36,000"
+                android:textSize="15sp"
+                android:textColor="#D97706"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:id="@+id/off8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(28% OFF)"
+                android:textSize="13sp"
+                android:textColor="#1F7000"
+                android:textStyle="bold"
+                android:layout_marginTop="1dp" />
+
+            <Button
+                android:id="@+id/save8"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Save Offer"
+                android:textSize="14sp"
+                android:textColor="#3D1F00"
+                android:textStyle="bold"
+                android:backgroundTint="#FFB45C"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/card9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:elevation="6dp"
+            android:padding="12dp"
+            android:layout_marginBottom="18dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image9"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_41"
+                android:background="#EDEDED"
+                android:clipToOutline="true" />
+
+            <TextView
+                android:id="@+id/title9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bali Couple Retreat"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#3A2400"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/original9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Original Price: ₹80,000"
+                android:textSize="13sp"
+                android:textColor="#8A755A"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:id="@+id/discount9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discount Price: ₹61,999"
+                android:textSize="15sp"
+                android:textColor="#D97706"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:id="@+id/off9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(22% OFF)"
+                android:textSize="13sp"
+                android:textColor="#1F7000"
+                android:textStyle="bold"
+                android:layout_marginTop="1dp" />
+
+            <Button
+                android:id="@+id/save9"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Save Offer"
+                android:textSize="14sp"
+                android:textColor="#3D1F00"
+                android:textStyle="bold"
+                android:backgroundTint="#FFB45C"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/card10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:elevation="6dp"
+            android:padding="12dp"
+            android:layout_marginBottom="18dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image10"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_42"
+                android:background="#EDEDED"
+                android:clipToOutline="true" />
+
+            <TextView
+                android:id="@+id/title10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Singapore Family Package"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#3A2400"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/original10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Original Price: ₹60,000"
+                android:textSize="13sp"
+                android:textColor="#8A755A"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:id="@+id/discount10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discount Price: ₹44,999"
+                android:textSize="15sp"
+                android:textColor="#D97706"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:id="@+id/off10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(25% OFF)"
+                android:textSize="13sp"
+                android:textColor="#1F7000"
+                android:textStyle="bold"
+                android:layout_marginTop="1dp" />
+
+            <Button
+                android:id="@+id/save10"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Save Offer"
+                android:textSize="14sp"
+                android:textColor="#3D1F00"
+                android:textStyle="bold"
+                android:backgroundTint="#FFB45C"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGoToSaved"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="View Saved Offers"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#D97706"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

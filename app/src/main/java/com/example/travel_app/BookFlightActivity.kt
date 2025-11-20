@@ -2,6 +2,7 @@ package com.example.travel_app
 
 import android.app.DatePickerDialog
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
@@ -157,13 +158,14 @@ class BookFlightActivity : AppCompatActivity() {
         if (currentResults.isEmpty()) {
             tvResultsHeader.visibility = View.VISIBLE
             tvResultsHeader.text = "No flights found for $from → $to (India-only dummy data)"
+            tvResultsHeader.setTextColor(Color.parseColor("#D32F2F"))
             rvFlights.visibility = View.GONE
-            return
+                    return
         }
 
         tvResultsHeader.visibility = View.VISIBLE
         tvResultsHeader.text = "Found ${currentResults.size} flights"
-
+        tvResultsHeader.setTextColor(Color.parseColor("#2E7D32"))
         rvFlights.visibility = View.VISIBLE
         rvFlights.layoutManager = LinearLayoutManager(this)
         rvFlights.adapter = FlightAdapter(currentResults) { flight ->

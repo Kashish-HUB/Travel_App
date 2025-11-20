@@ -1,0 +1,47 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp" android:gravity="center"
+    android:background="#FFF6E9">
+    <TextView
+        android:id="@+id/txtPackageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Package:"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#3A2400"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txtAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount:"
+        android:textSize="20sp"
+        android:textColor="#D97706"
+        android:layout_marginTop="12dp"/>
+    <Button
+        android:id="@+id/btnConfirmPay"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Confirm Payment"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#D97706"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btnDownloadInvoice"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Download Invoice"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#3A2400"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>
